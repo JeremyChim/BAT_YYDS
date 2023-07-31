@@ -1,5 +1,7 @@
 # BAT_YYDS
 
+小铭同学用来记录BAT脚本的笔记🍗🍕🍔🍟🌭🍠🍓🤩🤣😍🤪🥳
+
 
 
 # grep 打印后几行
@@ -41,7 +43,6 @@ ql_sdk_api_test
 0
 14
 1
-
 ```
 
 # 输入
@@ -74,58 +75,58 @@ echo date : 2023-7-15
 echo version : v3.0
 echo.
 
-echo 0	monitor
-echo 1	pull_log
-echo 2	auto_call
-echo 3	manual_call
-echo 4	update_num
-echo 5	tailf_bdLog
-echo 6	airplane_mode_on
-echo 7	airplane_mode_off
-echo 8	reboot
-echo 9	sound
-echo 10	cat_network
-echo 11	ql_sdk_api_test
-echo 12	cat_iccid
-echo 13	tailf_dislog
-echo 14	debug
-echo 15	cat_bdLog
-echo 16	start_log.sh
-echo 17	done_log.sh.bat
-echo 18	grep_signa
-echo 19	grep_eu_ecall
-echo 20	grep_gnss
-echo 21	grep_monitor
-echo 22	grep_logread
-echo -1	exit
+echo 0    monitor
+echo 1    pull_log
+echo 2    auto_call
+echo 3    manual_call
+echo 4    update_num
+echo 5    tailf_bdLog
+echo 6    airplane_mode_on
+echo 7    airplane_mode_off
+echo 8    reboot
+echo 9    sound
+echo 10    cat_network
+echo 11    ql_sdk_api_test
+echo 12    cat_iccid
+echo 13    tailf_dislog
+echo 14    debug
+echo 15    cat_bdLog
+echo 16    start_log.sh
+echo 17    done_log.sh.bat
+echo 18    grep_signa
+echo 19    grep_eu_ecall
+echo 20    grep_gnss
+echo 21    grep_monitor
+echo 22    grep_logread
+echo -1    exit
 echo.
 
 set /p a= ...... 
 
-if %a%== -1		exit
-if %a%== 0		goto monitor
-if %a%== 1		start pull_log.bat
-if %a%== 2		start auto_call.bat
-if %a%== 3		start manual_call.bat
-if %a%== 4		start update_num.bat
-if %a%== 5		start tailf_bdLog.bat
-if %a%== 6		start airplane_mode_on.bat
-if %a%== 7		start airplane_mode_off.bat
-if %a%== 8		start reboot.bat
-if %a%== 9		start sound.bat
-if %a%== 10		start cat_network.bat
-if %a%== 11		start ql_sdk_api_test.bat
-if %a%== 12		start cat_iccid.bat
-if %a%== 13		start tailf_dislog.bat
-if %a%== 14		start debug.bat
-if %a%== 15		start cat_bdLog.bat
-if %a%== 16		start start_log.sh.bat
-if %a%== 17		start done_log.sh.bat
-if %a%== 18		start grep_signa.bat
-if %a%== 19		start grep_eu_ecall.bat
-if %a%== 20		start grep_gnss.bat
-if %a%== 21		start grep_monitor.bat
-if %a%== 22		start grep_logread.bat
+if %a%== -1        exit
+if %a%== 0        goto monitor
+if %a%== 1        start pull_log.bat
+if %a%== 2        start auto_call.bat
+if %a%== 3        start manual_call.bat
+if %a%== 4        start update_num.bat
+if %a%== 5        start tailf_bdLog.bat
+if %a%== 6        start airplane_mode_on.bat
+if %a%== 7        start airplane_mode_off.bat
+if %a%== 8        start reboot.bat
+if %a%== 9        start sound.bat
+if %a%== 10        start cat_network.bat
+if %a%== 11        start ql_sdk_api_test.bat
+if %a%== 12        start cat_iccid.bat
+if %a%== 13        start tailf_dislog.bat
+if %a%== 14        start debug.bat
+if %a%== 15        start cat_bdLog.bat
+if %a%== 16        start start_log.sh.bat
+if %a%== 17        start done_log.sh.bat
+if %a%== 18        start grep_signa.bat
+if %a%== 19        start grep_eu_ecall.bat
+if %a%== 20        start grep_gnss.bat
+if %a%== 21        start grep_monitor.bat
+if %a%== 22        start grep_logread.bat
 
 
 pause
@@ -161,28 +162,28 @@ goto menu
 @echo.
 @echo ==========功能菜单==========
 @echo.
-@echo  1、进入ADB Shell					 2、日志功能
-@echo  3、网络功能						 4、OTA功能  
-@echo  5、查xcall号码						 6、查vin
-@echo  7、查iccid						 8、查sn  
-@echo  9、查版本						10、查配置文件 
-@echo 11、写入vin						12、写入ecall号码（手动）
-@echo 13、写入ecall号码（自动）				14、写入icall号码
-@echo 15、写入xcall号码（所有xcall号码）			16、写入sn码 
-@echo 17、查productkey					18、查devicesecret
-@echo 19、写入productkey					20、写入devicesecret 
-@echo 21、查设备tsp登录信息					22、打开设备管理器 
-@echo 23、软件版本查询（自动刷新脚本）			24、证书状态查询和切换（硬PKI和软证书）
-@echo 25、运行hal进程监测脚本					26、切换脚本背景色和文字色
-@echo 27、ARP监测脚本（自动刷新脚本）				28、清除productkey 
-@echo 29、清除devicesecret					30、清除sn 
-@echo 31、清除vin											
+@echo  1、进入ADB Shell                     2、日志功能
+@echo  3、网络功能                         4、OTA功能  
+@echo  5、查xcall号码                         6、查vin
+@echo  7、查iccid                         8、查sn  
+@echo  9、查版本                        10、查配置文件 
+@echo 11、写入vin                        12、写入ecall号码（手动）
+@echo 13、写入ecall号码（自动）                14、写入icall号码
+@echo 15、写入xcall号码（所有xcall号码）            16、写入sn码 
+@echo 17、查productkey                    18、查devicesecret
+@echo 19、写入productkey                    20、写入devicesecret 
+@echo 21、查设备tsp登录信息                    22、打开设备管理器 
+@echo 23、软件版本查询（自动刷新脚本）            24、证书状态查询和切换（硬PKI和软证书）
+@echo 25、运行hal进程监测脚本                    26、切换脚本背景色和文字色
+@echo 27、ARP监测脚本（自动刷新脚本）                28、清除productkey 
+@echo 29、清除devicesecret                    30、清除sn 
+@echo 31、清除vin                                            
 @echo 32、导入私钥  client.key（client.key放在脚本根目录）
 @echo 33、导入公钥  client.pub（client.pub放在脚本根目录）  
 @echo 34、导入Tbox证书  TBOX.crt（TBOX.crt放在脚本根目录）
-@echo 35、导入Tbox证书  OTA.crt（OTA.crt放在脚本根目录）	
+@echo 35、导入Tbox证书  OTA.crt（OTA.crt放在脚本根目录）    
 @echo 36、运行进程监测脚本
-@echo 37、查看GPS信息更新									
+@echo 37、查看GPS信息更新                                    
 @echo 0、刷新 
 @echo.
 @set /p a=请输入选项：
