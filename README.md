@@ -4,7 +4,7 @@
 
 
 
-# grep 打印后几行
+# grep 打印后7行
 
 ```bash
 adb shell
