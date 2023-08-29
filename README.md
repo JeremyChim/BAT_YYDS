@@ -2,12 +2,22 @@
 
 小铭同学用来记录BAT脚本的笔记🍗🍕🍔🍟🌭🍠🍓🤩🤣😍🤪🥳
 
+
+# 等待10秒
+```batch
+timeout 10
+```
+返回空
+```batch
+timeout 10 > nul
+```
+
 # 窗口宽高
-```bash
+```batch
 mode con: cols=100 lines=10
 ```
 # 窗口颜色
-```bash
+```batch
 color 02
 ```
     0 = 黑色       8 = 灰色
@@ -21,34 +31,34 @@ color 02
 
 # grep 打印后7行
 
-```bash
+```batch
 adb shell
 ifconfig | grep -A 7 "rmnet_data0"
 ```
 
 # ping 10下百度
 
-```bash
+```batch
 adb shell
 ping www.baidu.com -w 10
 ```
 
 # 匹配最后3次
 
-```bash
+```batch
 adb shell
 cat /sdcard/log/bdlog/bdLog | grep "testEcallNum" | tail -3
 ```
 
 # 重定向输出
 
-```bash
+```batch
 echo %date% %time% >> data.log
 ```
 
 # 重定向输入
 
-```bash
+```batch
 adb shell < airplane_mode_off.txt
 ```
 
@@ -62,21 +72,21 @@ ql_sdk_api_test
 
 # 输入
 
-```bash
+```batch
 set /p a=请输入数字：
 echo 输入的数字是：%a%
 ```
 
 # 变量
 
-```bash
+```batch
 set a=100
 echo %a%
 ```
 
 # 菜单1
 
-```bash
+```batch
 @echo off
 
 title menu
@@ -156,7 +166,7 @@ goto menu
 
 # 菜单2
 
-```bash
+```batch
 @echo on
 :menu
 @mode con: cols=120 lines=55
